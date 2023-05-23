@@ -49,16 +49,16 @@
             height: 260px;
             transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
         }
-        
-        img.zelda:hover{
-            width: 270px;
-            height: 270px;
+
+        div.zelda-container:hover {
+            filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
             
         }
-        
 
-
- 
+        img.zelda:hover {
+            width: 270px;
+            height: 270px;
+        }
     </style>
 </head>
 
@@ -69,20 +69,10 @@
         </div>
 
         <div class="bloco">
-            <div class="zelda-container" data-tilt>
+            <div class="zelda-container">
                 <img src="./img/zelda.png" class="zelda">
             </div>
         </div>
     </header>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-    <script>
-        VanillaTilt.init(document.querySelectorAll('[data-tilt]'), {
-            max: 25,
-            speed: 400,
-            glare: true,
-            "max-glare": 0.4,
-        });
-    </script>
 </body>
 </html>

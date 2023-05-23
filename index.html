@@ -42,38 +42,23 @@
             margin-top: 60px;
             position: relative;
             overflow: hidden;
-
         }
 
         img.zelda {
-            width: 230px;
+            width: 260px;
             height: 260px;
-            transition: transform 0.5s;
-
+            transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
         }
-
-        div.zelda-container:hover img.zelda {
-            transform: scale(1.1);
-            opacity: 0.5;
-        }
-
-        div.zelda-container::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-             transition: opacity 0.5;
-         
-           
-        }
-
-        div.zelda-container:hover::before {
-            background-color: black;
-            opacity: 0.5;
+        
+        img.zelda:hover{
+            width: 270px;
+            height: 270px;
             
         }
+        
+
+
+ 
     </style>
 </head>
 
@@ -84,10 +69,20 @@
         </div>
 
         <div class="bloco">
-            <div class="zelda-container">
-                <img src="./img/zelda.jpg" class="zelda">
+            <div class="zelda-container" data-tilt>
+                <img src="./img/zelda.png" class="zelda">
             </div>
         </div>
     </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll('[data-tilt]'), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.4,
+        });
+    </script>
 </body>
 </html>

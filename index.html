@@ -2,7 +2,6 @@
 <head>
     <meta charset="utf-8">
     <title>Zeldinha</title>
-
     <style>
         body {
             height: 230vh;
@@ -41,23 +40,12 @@
             margin-left: 60px;
             margin-top: 60px;
             position: relative;
-            overflow: hidden;
+            overflow: visible;
         }
 
         img.zelda {
             width: 260px;
             height: 260px;
-            transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
-        }
-
-        div.zelda-container:hover {
-            filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
-            
-        }
-
-        img.zelda:hover {
-            width: 270px;
-            height: 270px;
         }
     </style>
 </head>
@@ -70,9 +58,19 @@
 
         <div class="bloco">
             <div class="zelda-container">
-                <img src="./img/zelda.png" class="zelda">
+                <img src="./img/zelda.png" class="zelda" id="zelda-image">
             </div>
         </div>
     </header>
+
+    <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector("#zelda-image"), {
+            max: 10,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5,
+        });
+    </script>
 </body>
 </html>

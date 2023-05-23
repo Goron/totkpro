@@ -35,17 +35,62 @@
 
         div.zelda-container {
             display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
+            justify-content: center;
             margin-left: 60px;
             margin-top: 60px;
-            position: relative;
-            overflow: visible;
         }
 
         img.zelda {
+            display: flex;
             width: 260px;
             height: 260px;
+        }
+
+        div.zelda-container1 {
+            display: flex;
+            justify-content: center;
+            margin-left: -300px;
+            margin-top: -1470px;
+        }
+
+        img.zelda1 {
+            display: flex;
+            width: 260px;
+            height: 260px;
+        }
+        div.zelda-cont {
+            display: flex;
+            justify-content: center;
+            margin-left: 270px;
+            margin-top: -260px;
+        }
+
+        img.zelda2 {
+            display: flex;
+            width: 260px;
+            height: 260px;
+        }
+        div.zelda-cont2 {
+            display: flex;
+            justify-content: center;
+            margin-left: 850px;
+            margin-top: -260px;
+        }
+
+        img.zelda3 {
+            display: flex;
+            width: 260px;
+            height: 260px;
+        }
+
+        div.nomes-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        img.criadores {
+            width: 100px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -56,25 +101,51 @@
             <img src="./img/triforce.png" class="triforce">
         </div>
 
+        <div class="nomes-container">
+            <img src="./img/albk.png" class="criadores">
+        </div>
+
+
         <div class="bloco">
             <div class="zelda-container">
                 <a href="https://drive.google.com/file/d/1lToRjPB6XLYar72A3TOgq0CqQrqwcFsZ/view">
-                   
                     <img src="./img/zelda.png" class="zelda" id="zelda-image">
                 </a>
             </div>
         </div>
-    </header>
 
+        <div class="zelda-container1">
+            <a href="https://drive.google.com/file/d/1bdw9b9dDKPbl58N9tc_vJJdk4dI6uWOa/view">
+                <img src="./img/zelda1.png" class="zelda1" id="zeldaimage1">
+            </a>
+        </div>
+
+        <div class="zelda-cont">
+            <a href="https://drive.google.com/file/d/1DPUVCNorUzYHFAEVEP24Z_K8TgVj8s8H/view?usp=share_link">
+                <img src="./img/zelda2.png" class="zelda2" id="zeldaimage2">
+            </a>
+        </div>
+
+        <div class="zelda-cont2">
+            <a href="https://drive.google.com/file/d/1qJioT2iarzMLpARHeV8u_1SL0QFqT71b/view">
+                <img src="./img/zelda3.png" class="zelda3" id="zeldaimage3">
+            </a>
+        </div>
+
+
+    </header>
 
     <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
     <script>
-        VanillaTilt.init(document.querySelector("#zelda-image"), {
+        VanillaTilt.init(document.querySelector("#zelda-image"));
+        VanillaTilt.init(document.querySelector("#zeldaimage1"),
+        VanillaTilt.init(document.querySelector("#zeldaimage2"),
+        VanillaTilt.init(document.querySelector("#zeldaimage3"), {
             max: 10,
             speed: 400,
             glare: true,
             "max-glare": 0.5,
-        });
+        })));
     </script>
 </body>
 </html>

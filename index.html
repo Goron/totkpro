@@ -1,78 +1,50 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>Zeldinha</title>
     <style>
         body {
-            height: 230vh;
             background-color: midnightblue;
-            background-position: center center;
         }
 
-        div.bloco {
+        .bloco {
             background-color: white;
-            height: 1500px;
-            border-radius: 1px;
-            margin: 50px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-        }
-
-        div.logo-container {
-            display: flex;
-            justify-content: center;
-        }
-
-        img.triforce {
-            width: 80px;
-            height: 70px;
-            margin-top: 10px;
-        }
-
-        img.zelda {
-            display: flex;
-            width: 260px;
-            height: 260px;
-            margin: 30 52px;
-        }
-
-        img.zelda1 {
-            display: flex;
-            width: 260px;
-            height: 260px;
-            margin: 30 0;
-        }
-
-        img.zelda2 {
-            display: flex;
-            width: 260px;
-            height: 260px;
-            margin: 30 52;
-        }
-
-        img.zelda3 {
-            display: flex;
-            width: 260px;
-            height: 260px;
-            margin: 30 0;
-        }
-
-        div.nomes-container {
-            display: flex;
-            justify-content: center;
-        }
-
-        img.criadores {
-            width: 100px;
-            margin-top: 20px;
-        }
-        ul {
-            list-style: none;
+            padding: 50px;
             display: flex;
             justify-content: space-around;
+            align-items: center;
         }
 
+        .zelda-container {
+            margin: 0 15px;
+        }
+
+            .zelda-container a {
+                display: block;
+                max-width: 260px;
+            }
+
+            .zelda-container img {
+                width: 100%;
+                height: auto;
+            }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .triforce {
+            width: 80px;
+            height: auto;
+        }
+
+        .criadores {
+            width: 100px;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -86,50 +58,44 @@
             <img src="./img/albk.png" class="criadores">
         </div>
 
-
         <div class="bloco">
             <div class="zelda-container">
                 <a href="https://drive.google.com/file/d/1lToRjPB6XLYar72A3TOgq0CqQrqwcFsZ/view">
                     <img src="./img/zelda.png" class="zelda" id="zelda-image">
                 </a>
             </div>
-        
 
-        <div class="zelda-container1">
-            <a href="https://drive.google.com/file/d/1bdw9b9dDKPbl58N9tc_vJJdk4dI6uWOa/view">
-                <img src="./img/zelda1.png" class="zelda1" id="zeldaimage1">
-            </a>
-        </div>
+            <div class="zelda-container">
+                <a href="https://drive.google.com/file/d/1bdw9b9dDKPbl58N9tc_vJJdk4dI6uWOa/view">
+                    <img src="./img/zelda1.png" class="zelda" id="zeldaimage1">
+                </a>
+            </div>
 
-        <div class="zelda-cont">
-            <a href="https://drive.google.com/file/d/1DPUVCNorUzYHFAEVEP24Z_K8TgVj8s8H/view?usp=share_link">
-                <img src="./img/zelda2.png" class="zelda2" id="zeldaimage2">
-            </a>
-        </div>
+            <div class="zelda-container">
+                <a href="https://drive.google.com/file/d/1DPUVCNorUzYHFAEVEP24Z_K8TgVj8s8H/view?usp=share_link">
+                    <img src="./img/zelda2.png" class="zelda" id="zeldaimage2">
+                </a>
+            </div>
 
-        <div class="zelda-cont2">
-            <a href="https://drive.google.com/file/d/1qJioT2iarzMLpARHeV8u_1SL0QFqT71b/view">
-                <img src="./img/zelda3.png" class="zelda3" id="zeldaimage3">
-            </a>
+            <div class="zelda-container">
+                <a href="https://drive.google.com/file/d/1qJioT2iarzMLpARHeV8u_1SL0QFqT71b/view">
+                    <img src="./img/zelda3.png" class="zelda" id="zeldaimage3">
+                </a>
+            </div>
         </div>
-        <div class="blocotrad">
-
-        </div>
-        </div>
-
     </header>
 
     <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
     <script>
         VanillaTilt.init(document.querySelector("#zelda-image"));
-        VanillaTilt.init(document.querySelector("#zeldaimage1"),
-        VanillaTilt.init(document.querySelector("#zeldaimage2"),
+        VanillaTilt.init(document.querySelector("#zeldaimage1"));
+        VanillaTilt.init(document.querySelector("#zeldaimage2"));
         VanillaTilt.init(document.querySelector("#zeldaimage3"), {
             max: 10,
             speed: 400,
             glare: true,
             "max-glare": 0.5,
-        })));
+        });
     </script>
 </body>
 </html>

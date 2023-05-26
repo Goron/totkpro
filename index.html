@@ -2,37 +2,18 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Zeldinha</title>
+    <link rel="shortcut icon" href="./img/triforce.png" type="image/x-icon" />
+    <title>Zelda Totk</title>
     <style>
         body {
             background-color: midnightblue;
         }
 
-        .bloco {
-            background-color: white;
-            padding: 50px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .zelda-container {
-            margin: 0 15px;
-        }
-
-            .zelda-container a {
-                display: block;
-                max-width: 260px;
-            }
-
-            .zelda-container img {
-                width: 100%;
-                height: auto;
-            }
-
         .logo-container {
             display: flex;
             justify-content: center;
+            align-items: center;
+            flex-direction: column;
             margin-bottom: 20px;
         }
 
@@ -44,6 +25,49 @@
         .criadores {
             width: 100px;
             height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .albk-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .bloco {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .zelda-container {
+            margin: 0 15px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+            .zelda-container a {
+                display: block;
+                max-width: 260px;
+                transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+            }
+
+            .zelda-container img {
+                width: 100%;
+                height: auto;
+                transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+            }
+        .zelda-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -60,41 +84,76 @@
 
         <div class="bloco">
             <div class="zelda-container">
-                <a href="https://drive.google.com/file/d/1lToRjPB6XLYar72A3TOgq0CqQrqwcFsZ/view">
+                <a href="https://drive.google.com/file/d/1f0WijVTMtuBqIV_Mf8dhLOJ4cGAbE6pq/view">
                     <img src="./img/zelda.png" class="zelda" id="zelda-image">
                 </a>
             </div>
 
             <div class="zelda-container">
-                <a href="https://drive.google.com/file/d/1bdw9b9dDKPbl58N9tc_vJJdk4dI6uWOa/view">
+                <a href="https://drive.google.com/file/d/1BbYyMp9YhG2SEYzNmIH8bTKg2F1_X9JS/view">
                     <img src="./img/zelda1.png" class="zelda" id="zeldaimage1">
                 </a>
             </div>
 
             <div class="zelda-container">
-                <a href="https://drive.google.com/file/d/1DPUVCNorUzYHFAEVEP24Z_K8TgVj8s8H/view?usp=share_link">
+                <a href="https://drive.google.com/file/d/1D035xXw5iU6EHeMDv5ZRLvpM4krC6IyD/view">
                     <img src="./img/zelda2.png" class="zelda" id="zeldaimage2">
                 </a>
             </div>
 
             <div class="zelda-container">
-                <a href="https://drive.google.com/file/d/1qJioT2iarzMLpARHeV8u_1SL0QFqT71b/view">
+                <a href="https://drive.google.com/file/d/18PE0wz5mEXFXDlKS9LZazha5HWsm3gdX/view?usp=share_link">
                     <img src="./img/zelda3.png" class="zelda" id="zeldaimage3">
                 </a>
             </div>
         </div>
-    </header>
 
-    <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+        <div class="bloco">
+            <div class="zelda-container">
+                <a href="https://drive.google.com/file/d/1ZxGDQSxwzgA17c-5XF9h1_YyW0KtnLjv/view?usp=share_link">
+                    <img src="./img/zamibbo.png" class="zelda" id="zamibbo" />
+                </a>
+            </div>
+
+            <div class="zelda-container">
+                <a href="https://drive.google.com/file/d/1p3My5QyQ59ZuJHDx7QsMTJwYGuzV_uSn/view?usp=share_link">
+                    <img src="./img/ztrad.png" class="zelda" id="ztrad">
+                </a>
+            </div>
+
+            <div class="zelda-container">
+                <a href="https://drive.google.com/file/d/1FZp1UuMgu9gD5E8scw9jOcsOunAaREUg/view?usp=share_link">
+                    <img src="./img/zswitch.png" class="zelda" id="zswitch">
+                </a>
+            </div>
+
+            <div class="zelda-container">
+                <a href="https://drive.google.com/file/d/1qOlZlm0mrWi7vtUGVCn8-EqcISzBt_HZ/view?usp=share_link">
+                    <img src="./img/zcheats.png" class="zelda" id="zcheats">
+                </a>
+            </div>
+        </div>
+    </header>
     <script>
-        VanillaTilt.init(document.querySelector("#zelda-image"));
-        VanillaTilt.init(document.querySelector("#zeldaimage1"));
-        VanillaTilt.init(document.querySelector("#zeldaimage2"));
-        VanillaTilt.init(document.querySelector("#zeldaimage3"), {
-            max: 10,
-            speed: 400,
-            glare: true,
-            "max-glare": 0.5,
+        // Função para aumentar a imagem quando passar o mouse
+        function aumentarImagem(event) {
+            event.target.style.transform = "scale(1.03)";
+            event.target.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.3)";
+        }
+
+        // Função para voltar ao tamanho original quando tirar o mouse
+        function diminuirImagem(event) {
+            event.target.style.transform = "scale(1)";
+            event.target.style.boxShadow = "none";
+        }
+
+        // Selecionar todas as imagens do Zelda
+        const imagensZelda = document.querySelectorAll(".zelda");
+
+        // Adicionar os eventos de mouseover e mouseout a todas as imagens
+        imagensZelda.forEach(function (imagem) {
+            imagem.addEventListener("mouseover", aumentarImagem);
+            imagem.addEventListener("mouseout", diminuirImagem);
         });
     </script>
 </body>

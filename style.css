@@ -104,8 +104,14 @@ body {
     }
 }
 @media screen and (max-width: 768px){
-    .banner .bloco ..zelda-container .triforce{
-        width:100%;
-        flex-direction: column;
+    img {
+        width: 100%;
+        border-radius: 4px;
+
+    }
+    .zelda-container 
+    {
+        column-count: 2;
+        column-gap: 4px;
     }
 }

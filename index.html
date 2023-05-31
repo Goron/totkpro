@@ -4,72 +4,12 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="./img/triforce.png" type="image/x-icon" />
     <title>Totk Patches</title>
-    <style>
-        body {
-            background-color: midnightblue;
-        }
-
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-bottom: 20px;
-        }
-
-        .triforce {
-            width: 80px;
-            height: auto;
-        }
-
-        .criadores {
-            width: 100px;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-bottom: 20px;
-        }
-        .nomes-container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-        }
-            .bloco {
-            background-color: white;
-            padding: 30px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .zelda-container {
-            margin: 0 5px;
-            transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-
-            .zelda-container a {
-                display: block;
-                max-width: 250px;
-                transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
-            }
-
-            .zelda-container img {
-                width: 100%;
-                height: auto;
-                transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
-            }
-        .zelda-container:hover {
-            transform: scale(1.02);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
     <header class="menu-principal">
+
         <div class="logo-container">
             <img src="./img/tri.gif" class="triforce">
         </div>
@@ -103,12 +43,21 @@
                 </a>
             </div>
         </div>
-</header>
+        <div class="banner">
+            <div class="clouds">
+                <img src="./img/claudio1.png" style="--i:1">
+                <img src="./img/cloud2.png" style="--i:2">
+                <img src="./img/cloud3.png" style="--i:3">
+                <img src="./img/cloud4.png" style="--i:4">
+                <img src="./img/cloud5.png" style="--i:5">
+            </div>
+        </div>
+    </header>
     <script>
         // Função para aumentar a imagem quando passar o mouse
         function aumentarImagem(event) {
-            event.target.style.transform = "scale(1.03)";
-            event.target.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.3)";
+            event.target.style.transform = "scale(1.10)";
+            event.target.style.boxShadow = "5px 5px 10px rgba(0, 0, 0, 0.3)";
         }
 
         // Função para voltar ao tamanho original quando tirar o mouse

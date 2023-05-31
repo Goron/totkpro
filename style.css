@@ -8,38 +8,7 @@ html {
     width: 100%;
     height: 100%;
 }
-    .banner .clouds {
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        margin-bottom: 90px;
-    }
-    .banner .clouds img {
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        margin-bottom: -480px;
-        max-width: 100%;
-        animation: animate calc(8s * var(--i)) linear infinite;
-    }
-@keyframes animate {
-    0% {
-        transform: translateX(-100%);
-    }
 
-    100% {
-        transform: translateX(100%);
-    }
-}
 
 body {
     background-image: linear-gradient(to top, #0A4D68, #088395, #05BFDB, #0A4D68);
@@ -105,3 +74,32 @@ body {
         transform: scale(1.02);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     }
+.banner .clouds {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 90px;
+}
+
+    .banner .clouds img {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-bottom: -480px;
+        max-width: 100%;
+        animation: animate calc(8s * var(--i)) linear infinite;
+    }
+
+@keyframes animate {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}

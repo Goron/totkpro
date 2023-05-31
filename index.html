@@ -6,10 +6,9 @@
     <title>Totk Patches</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-
 <body>
-    <header class="menu-principal">
 
+    <header class="menu-principal">
         <div class="logo-container">
             <img src="./img/tri.gif" class="triforce">
         </div>
@@ -43,16 +42,17 @@
                 </a>
             </div>
         </div>
-        <div class="banner">
-            <div class="clouds">
-                <img src="./img/claudio1.png" style="--i:1">
-                <img src="./img/cloud2.png" style="--i:2">
-                <img src="./img/cloud3.png" style="--i:3">
-                <img src="./img/cloud4.png" style="--i:4">
-                <img src="./img/cloud5.png" style="--i:5">
-            </div>
-        </div>
+
     </header>
+    <div class="banner">
+        <div class="clouds">
+            <img src="./img/claudio1.png" style="--i:1">
+            <img src="./img/cloud2.png" style="--i:2">
+            <img src="./img/cloud3.png" style="--i:3">
+            <img src="./img/cloud4.png" style="--i:4">
+            <img src="./img/cloud5.png" style="--i:5">
+        </div>
+    </div>
     <script>
         // Função para aumentar a imagem quando passar o mouse
         function aumentarImagem(event) {
@@ -67,7 +67,7 @@
         }
 
         // Selecionar todas as imagens do Zelda
-        const imagensZelda = document.querySelectorAll(".zelda");
+        const imagensZelda = document.querySelectorAll("zelda");
 
         // Adicionar os eventos de mouseover e mouseout a todas as imagens
         imagensZelda.forEach(function (imagem) {

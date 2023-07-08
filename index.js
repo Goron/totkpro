@@ -1,4 +1,4 @@
-var password = "Sv9FsdE3";
+var password = "V7dEpMn";
 
 function passcheck() {
     if (document.getElementById('pass1').value != password) {

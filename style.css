@@ -1,61 +1,60 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 html {
     position: fixed;
     width: 100%;
     height: 100%;
 }
 
-
 body {
-    background-image: linear-gradient(to top, #3B7862, #65BB9C, #65BB9C, #3B7862);
-    background-attachment: fixed;
-}
-
-.logo-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 20px;
+    height: 100vh;
+    margin: 0;
+    background: #000;
 }
 
-.triforce {
-    margin-top: 30px;
-    width: 60px;
-    height: auto;
+.content {
+    position: relative;
+    margin-bottom: 50px;
 }
 
-.criadores {
-    width: 300px;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.nomes-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    .content h2 {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        font-size: 6em;
+        white-space: nowrap;
+    }
+        .content h2:nth-child(1) {
+            color: transparent;
+            -webkit-text-stroke: 2px #17b594;
+        }
+        .content h2:nth-child(2) {
+            color: #17b594;
+            animation: animate 4s ease-in-out infinite;
+        }
+@keyframes animate
+{
+    0%,100% {
+        clip-path: polygon(0 40%, 21% 41%, 35% 53%, 53% 63%, 75% 60%, 91% 55%, 100% 50%, 100% 100%, 0% 99%);
+    }
+    50% {
+        clip-path: polygon(0 66%, 18% 72%, 41% 69%, 59% 59%, 75% 46%, 93% 39%, 100% 38%, 100% 100%, 0% 99%);
+    }
 }
 
 .bloco {
-    padding: 40px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .zelda-container {
@@ -80,8 +79,3 @@ body {
         transform: scale(1.20);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     }
-
-{
-    
-}
-

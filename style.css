@@ -1,7 +1,12 @@
-* {
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 html {
     position: fixed;
@@ -11,7 +16,7 @@ html {
 
 
 body {
-    background-image: linear-gradient(to top, #004c4c, #66b2b2, #66b2b2, #006666);
+    background-image: linear-gradient(to top, #3B7862, #65BB9C, #65BB9C, #3B7862);
     background-attachment: fixed;
 }
 
@@ -75,4 +80,8 @@ body {
         transform: scale(1.20);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     }
+
+{
+    
+}
 
